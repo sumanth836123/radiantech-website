@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Radiantech Edge AI stack: edge hardware platforms, embedded firmware, AI and vision engines, and intelligent applications, all engineered in-house as one integrated system.">
+  <title>Edge AI Technology | RADIANTECH SYSTEMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="nav">
+    <a class="brand" href="index.html">
+      <img src="./assets/horizontal_logo_navy.png" alt="RADIANTECH SYSTEMS Logo">
+    </a>
+    
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Hardware Products</a>
+      <a href="solutions.html">Intelligent Solutions</a>
+      <a class="active" href="technology.html">Technology</a>
+    </nav>
+    
+    <a class="contact-pill-btn" href="contact-details.html">
+      Contact Us <span>→</span>
+    </a>
+    
+    <button class="menu-btn" aria-label="Toggle navigation menu">☰</button>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero page-hero--technology">
+      <div class="hero-container">
+        <!-- paragraph is exactly as wide as the heading -->
+        <div class="products-intro">
+        <h1>One Edge AI Stack<br><span class="blue-text">From Silicon to Intelligence.</span></h1>
+        <p class="hero-lead">Radiantech designs every layer of an Edge AI system in-house: the hardware it runs on, the embedded firmware that brings it to life, and the intelligent software that turns sensor data into real-time decisions. One team, engineering every layer to work as one.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDGE AI STACK: interactive layer selector -->
+    <section id="edge-ai-stack" class="section-container tech-stack">
+      <div class="section-header">
+        <p class="hero-eyebrow">THE RADIANTECH EDGE AI STACK</p>
+        <h2 class="section-title">Four Layers, <span>One Integrated System</span></h2>
+        <p class="section-desc">Select a layer to see how hardware, firmware, AI and applications come together in every system we build.</p>
+      </div>
+
+      <div class="layer-selector">
+
+        <!-- Layer 4 -->
+        <div class="layer-item active" id="layer-applications">
+          <div class="layer-header">
+            <span class="layer-title">Layer 4: Intelligent Edge Applications</span>
+            <span class="layer-badge">INTELLIGENT SOFTWARE</span>
+          </div>
+          <div class="layer-details">
+            <p>The software users see and act on: video analytics applications, real-time alerts, operator dashboards and reports. Systems integrate with existing control rooms, video management and enterprise platforms through standard APIs and messaging, and are managed remotely with secure over-the-air updates.</p>
+            <div class="tag-list" style="margin-top: 12px;">
+              <span class="tag-badge">Analytics Applications</span>
+              <span class="tag-badge">Alerts &amp; Dashboards</span>
+              <span class="tag-badge">System Integration</span>
+              <span class="tag-badge">Secure OTA Updates</span>
+            </div>
+          </div>
+        </div>
+        <!-- Layer 3 -->
+        <div class="layer-item" id="layer-edge-ai">
+          <div class="layer-header">
+            <span class="layer-title">Layer 3: Edge AI &amp; Vision Engine</span>
+            <span class="layer-badge">EDGE AI</span>
+          </div>
+          <div class="layer-details">
+            <p>The intelligence of the system. We select, train and optimise AI models to run in real time on embedded hardware, building accelerated multi-camera video pipelines and fusing data from vision, thermal, radar and RF sensors to detect, classify and track reliably in the field.</p>
+            <div class="tag-list" style="margin-top: 12px;">
+              <span class="tag-badge">Model Training &amp; Optimisation</span>
+              <span class="tag-badge">Accelerated Inference</span>
+              <span class="tag-badge">Multi-Camera Pipelines</span>
+              <span class="tag-badge">Sensor Fusion</span>
+            </div>
+          </div>
+        </div>
+        <!-- Layer 2 -->
+        <div class="layer-item" id="layer-firmware">
+          <div class="layer-header">
+            <span class="layer-title">Layer 2: Embedded Firmware &amp; System Software</span>
+            <span class="layer-badge">EMBEDDED FIRMWARE</span>
+          </div>
+          <div class="layer-details">
+            <p>The software that brings the hardware to life: board support packages, customised embedded Linux, device drivers and bootloaders, real-time firmware for microcontrollers, and FPGA logic for high-speed signal processing, all built with secure boot and long-term maintainability in mind.</p>
+            <div class="tag-list" style="margin-top: 12px;">
+              <span class="tag-badge">BSP &amp; Embedded Linux</span>
+              <span class="tag-badge">Device Drivers</span>
+              <span class="tag-badge">RTOS Firmware</span>
+              <span class="tag-badge">FPGA &amp; DSP</span>
+            </div>
+          </div>
+        </div>
+        <!-- Layer 1 -->
+        <div class="layer-item" id="layer-hardware">
+          <div class="layer-header">
+            <span class="layer-title">Layer 1: Edge Hardware Platforms</span>
+            <span class="layer-badge">HARDWARE</span>
+          </div>
+          <div class="layer-details">
+            <p>The physical foundation: edge computing platforms built on NVIDIA&reg; Jetson Orin&trade;, custom carrier boards and multilayer PCB design, camera, sensor and RF interfaces, PoE and wireless connectivity, and rugged, fanless enclosures engineered for heat, dust and vibration.</p>
+            <div class="tag-list" style="margin-top: 12px;">
+              <span class="tag-badge">NVIDIA&reg; Jetson Orin&trade;</span>
+              <span class="tag-badge">Custom Boards &amp; PCB</span>
+              <span class="tag-badge">Sensor &amp; RF Interfaces</span>
+              <span class="tag-badge">Rugged Fanless Design</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CORE TECHNOLOGY CAPABILITIES -->
+    <section id="core-capabilities" class="section-container tech-capabilities" style="background: #f8fafc; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+      <div class="section-header">
+        <p class="hero-eyebrow">CORE CAPABILITIES</p>
+        <h2 class="section-title">What Makes Our <span>Edge AI Work</span></h2>
+        <p class="section-desc">The technologies that run through every Radiantech system, from our own hardware platforms to the solutions we build for customers.</p>
+      </div>
+
+      <div class="cards-grid-2">
+
+        <div class="feature-card">
+          <span class="card-num-tag">01 / EDGE AI ACCELERATION</span>
+          <h3>Real-Time AI on Embedded Hardware</h3>
+          <p>AI models are optimised for the exact hardware they run on, so complex vision and analytics workloads run in real time within tight power, size and thermal limits.</p>
+          <div class="tag-list">
+            <span class="tag-badge">NVIDIA&reg; Jetson</span>
+            <span class="tag-badge">Model Optimisation</span>
+            <span class="tag-badge">Low-Power Inference</span>
+          </div>
+        </div>
+        <div class="feature-card">
+          <span class="card-num-tag">02 / MULTI-SENSOR FUSION</span>
+          <h3>Seeing Beyond a Single Sensor</h3>
+          <p>Combining camera, thermal, radar and RF data gives reliable detection in darkness, poor weather and cluttered environments, where any single sensor alone would fall short.</p>
+          <div class="tag-list">
+            <span class="tag-badge">Vision &amp; Thermal</span>
+            <span class="tag-badge">Radar &amp; RF</span>
+            <span class="tag-badge">Sensor Fusion</span>
+          </div>
+        </div>
+        <div class="feature-card">
+          <span class="card-num-tag">03 / RUGGED &amp; DEPLOYABLE</span>
+          <h3>Built for the Field</h3>
+          <p>Fanless thermal design, sealed enclosures and industrial interfaces let our systems run continuously in remote, outdoor and harsh environments with minimal maintenance.</p>
+          <div class="tag-list">
+            <span class="tag-badge">Fanless Thermal Design</span>
+            <span class="tag-badge">Sealed Enclosures</span>
+            <span class="tag-badge">Industrial I/O</span>
+          </div>
+        </div>
+        <div class="feature-card">
+          <span class="card-num-tag">04 / SECURE &amp; CONNECTED</span>
+          <h3>Secure from Boot to Cloud</h3>
+          <p>Secure boot, encrypted communication and signed over-the-air updates protect devices and data, while 5G, Wi-Fi and wired connectivity keep systems reachable where it matters.</p>
+          <div class="tag-list">
+            <span class="tag-badge">Secure Boot</span>
+            <span class="tag-badge">Encrypted Communication</span>
+            <span class="tag-badge">5G &amp; Wi-Fi</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="./assets/horizontal_logo_navy.png" alt="RADIANTECH SYSTEMS Logo">
+        <p>Electronics and Embedded Engineering Company building Edge AI and Intelligent Electronic systems — from Concept to Production.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Hardware Products</a></li>
+          <li><a href="solutions.html">Intelligent Solutions</a></li>
+          <li><a href="technology.html">Technology</a></li>
+          <li><a href="contact-details.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Hardware Products</h5>
+        <ul>
+          <li><a href="products.html">Radian EDGE</a></li>
+          <li><a href="products.html">Radian VYUHA</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Intelligent Solutions</h5>
+        <ul>
+          <li><a href="solutions.html#home-community-security">Home &amp; Community Security</a></li>
+          <li><a href="solutions.html#defence-surveillance">Defence Surveillance</a></li>
+          <li><a href="solutions.html#traffic-law-order">Traffic and Law &amp; Order</a></li>
+          <li><a href="solutions.html#workforce-safety">Workforce Safety</a></li>
+          <li><a href="solutions.html#fire-hazard">Fire, Smoke &amp; Hazard Detection</a></li>
+          <li><a href="solutions.html#asset-equipment">Asset &amp; Equipment Intelligence</a></li>
+          <li><a href="solutions.html#process-operations">Process &amp; Operations Intelligence</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Technology</h5>
+        <ul>
+          <li><a href="technology.html#edge-ai-stack">The Radiantech Edge AI Stack</a></li>
+          <li><a href="technology.html#core-capabilities">Core Capabilities</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Radiantech Systems Pvt Ltd — Bengaluru, Karnataka, India. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-use.html">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+  <!-- layer selector: click (or Enter/Space) opens a layer's details. Inline so it works even when the page is opened as a file -->
+  <script>
+    (function () {
+      var layers = document.querySelectorAll('.layer-item');
+      function open(item) {
+        layers.forEach(function (l) {
+          l.classList.toggle('active', l === item);
+          l.setAttribute('aria-expanded', l === item ? 'true' : 'false');
+        });
+      }
+      var target = location.hash ? document.getElementById(location.hash.slice(1)) : null;
+      if (target && target.classList.contains('layer-item')) { open(target); }
+      layers.forEach(function (item) {
+        item.setAttribute('role', 'button');
+        item.setAttribute('tabindex', '0');
+        item.setAttribute('aria-expanded', item.classList.contains('active') ? 'true' : 'false');
+        item.addEventListener('click', function () { open(item); });
+        item.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(item); }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Radiantech Systems Pvt Ltd — Reach out for custom PCB engineering, edge AI hardware platforms, FPGA development, and technical inquiries in Bengaluru, Karnataka, India.">
+  <title>Contact Us | RADIANTECH SYSTEMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="nav">
+    <a class="brand" href="index.html">
+      <img src="./assets/horizontal_logo_navy.png" alt="RADIANTECH SYSTEMS Logo">
+    </a>
+    
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Hardware Products</a>
+      <a href="solutions.html">Intelligent Solutions</a>
+      <a href="technology.html">Technology</a>
+    </nav>
+    
+    <!-- hidden on this page; keeps its space so the menu stays centred -->
+    <a class="contact-pill-btn contact-pill-btn--hidden" href="contact-details.html" aria-hidden="true" tabindex="-1">
+      Contact Us <span>→</span>
+    </a>
+    
+    <button class="menu-btn" aria-label="Toggle navigation menu">☰</button>
+  </header>
+
+  <main>
+    <!-- CONTACT HERO SECTION -->
+    <section class="contact-page-hero contact-page-hero--compact">
+      <div class="hero-container">
+        <h1>Get in Touch with Our<br><span class="blue-text">Engineering Team.</span></h1>
+        <p class="hero-lead">Looking for an Intelligent Electronic or Edge AI solution? Let's engineer it!</p>
+      </div>
+    </section>
+
+    <!-- CONTACT MAIN LAYOUT -->
+    <section class="contact-layout-grid contact-layout-grid--single">
+
+      <!-- Direct contact CTA: goes to the Contact Us (details) page -->
+      <div class="direct-contact-cta">
+        <a href="contact-details.html" class="btn-primary">
+          Direct Contact <span>→</span>
+        </a>
+      </div>
+
+      <!-- Interactive Contact Form -->
+      <div class="contact-form-card">
+        <h2>Send Us a Message</h2>
+        <p class="sub">Fill out the form below and an engineering specialist will get back to you within 24 hours.</p>
+        
+        <!-- data-endpoint: paste the Google Apps Script web app URL here (see backend/SETUP.md) -->
+        <form id="contactForm" data-endpoint="https://script.google.com/macros/s/AKfycbwH2--R2BxhrNhrKUKl413z75EymNzGEyJeTM40itSTNDfvQ4t5NsohpmLoCucNXB9yow/exec" novalidate>
+          <!-- spam trap: hidden from people, bots fill it in -->
+          <div class="form-trap" aria-hidden="true">
+            <label for="website">Website</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="firstName">First Name <span class="req">*</span></label>
+              <input type="text" id="firstName" class="form-input" autocomplete="given-name" maxlength="100" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" class="form-input" autocomplete="family-name" maxlength="100">
+            </div>
+          </div>
+
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="workEmail">Email(Preferably Work) <span class="req">*</span></label>
+              <input type="email" id="workEmail" class="form-input" autocomplete="email" maxlength="200" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phoneNum">Phone Number <span class="req">*</span></label>
+              <input type="tel" id="phoneNum" class="form-input" autocomplete="tel" maxlength="30" required>
+            </div>
+          </div>
+
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="companyName">Company Name</label>
+              <input type="text" id="companyName" class="form-input" autocomplete="organization" maxlength="200">
+            </div>
+            
+            <div class="form-group">
+              <label for="serviceInterest">Area of Interest <span class="req">*</span></label>
+              <select id="serviceInterest" class="form-select" required>
+                <option value="" disabled selected>Select service or product</option>
+                <option value="hardware">Hardware Design & PCB Engineering</option>
+                <option value="embedded">Embedded Systems & FPGA</option>
+                <option value="edge-ai">Edge AI Software & Computer Vision</option>
+                <option value="complete-systems">Complete System Deployment</option>
+                <option value="custom-solution">Custom Engineering Solution</option>
+                <option value="other">General Inquiry</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="messageText">Briefly Describe the Project/Query<span class="req">*</span></label>
+            <textarea id="messageText" class="form-textarea" maxlength="5000" required></textarea>
+          </div>
+
+          <!-- File Upload Zone -->
+          <div class="form-group">
+            <label>Attach Project Brief or Specifications (Optional)</label>
+            <div class="file-upload-box" id="dropZone">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="17 8 12 3 7 8" />
+                <line x1="12" y1="3" x2="12" y2="15" />
+              </svg>
+              <p>Drag and drop your file here, or browse</p>
+              <small>PDF, DOCX, ZIP, Gerber files up to 10 MB</small>
+              <input type="file" id="fileInput" style="display: none;">
+            </div>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message <span>→</span></button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS SECTION (RESTORED FULLY) -->
+    <section class="section-container" style="background: #f8fafc; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+      <div class="section-header" style="text-align: center;">
+        <p class="hero-eyebrow" style="justify-content: center;">COMMON QUESTIONS</p>
+        <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+        <p class="section-desc" style="margin: 0 auto 40px auto;">Everything you need to know about working with Radiantech Systems Pvt Ltd on custom hardware design, IP ownership, and production lead times.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the typical turnaround time for a custom PCB prototype?</span>
+            <span class="arrow">↓</span>
+          </div>
+          <div class="faq-answer">
+            For standard multi-layer carrier board prototypes, our turn-around time is typically 2 to 3 weeks from schematic approval to assembled functional prototypes. Rapid 10-day expedited prototyping is available for urgent projects.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Who retains Intellectual Property (IP) rights for custom designs?</span>
+            <span class="arrow">↓</span>
+          </div>
+          <div class="faq-answer">
+            You retain 100% full ownership of all custom schematics, PCB Gerber files, FPGA bitstreams, and software source code developed under a custom engineering contract. We sign non-disclosure agreements (NDAs) before discussing technical details.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What are your Minimum Order Quantities (MOQ) for production?</span>
+            <span class="arrow">↓</span>
+          </div>
+          <div class="faq-answer">
+            We support low-volume production runs starting at just 10 units for specialized industrial & defense deployments, as well as full volume manufacturing for thousands of units.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do you offer CE / FCC certification and compliance support?</span>
+            <span class="arrow">↓</span>
+          </div>
+          <div class="faq-answer">
+            Yes. We design all hardware with EMC/EMI pre-compliance standards (CISPR 32 / FCC Part 15 Class A & B). We assist throughout accredited lab testing to secure CE, FCC, RoHS, and REACH certifications.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="./assets/horizontal_logo_navy.png" alt="RADIANTECH SYSTEMS Logo">
+        <p>Electronics and Embedded Engineering Company building Edge AI and Intelligent Electronic systems — from Concept to Production.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Hardware Products</a></li>
+          <li><a href="solutions.html">Intelligent Solutions</a></li>
+          <li><a href="technology.html">Technology</a></li>
+          <li><a href="contact-details.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Hardware Products</h5>
+        <ul>
+          <li><a href="products.html">Radian EDGE</a></li>
+          <li><a href="products.html">Radian VYUHA</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Intelligent Solutions</h5>
+        <ul>
+          <li><a href="solutions.html#home-community-security">Home &amp; Community Security</a></li>
+          <li><a href="solutions.html#defence-surveillance">Defence Surveillance</a></li>
+          <li><a href="solutions.html#traffic-law-order">Traffic and Law &amp; Order</a></li>
+          <li><a href="solutions.html#workforce-safety">Workforce Safety</a></li>
+          <li><a href="solutions.html#fire-hazard">Fire, Smoke &amp; Hazard Detection</a></li>
+          <li><a href="solutions.html#asset-equipment">Asset &amp; Equipment Intelligence</a></li>
+          <li><a href="solutions.html#process-operations">Process &amp; Operations Intelligence</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Technology</h5>
+        <ul>
+          <li><a href="technology.html#edge-ai-stack">The Radiantech Edge AI Stack</a></li>
+          <li><a href="technology.html#core-capabilities">Core Capabilities</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Radiantech Systems Pvt Ltd — Bengaluru, Karnataka, India. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-use.html">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
